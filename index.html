@@ -1,566 +1,553 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <style>body {
-    background-color: #f4f4f4;
-    margin: 0
-}
 
-.outer {
-    margin: 0 auto;
-    max-width: 600px;
-    width: 100%
-}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0
+        }
+        
+        .outer {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%
+        }
+        
+        .middle .outer {
+            background-color: #fff;
+            border-radius: 4px
+        }
+        
+        .footer,
+        .header,
+        .middle {
+            margin: 0 10px;
+            text-align: center;
+            background-color: #f4f4f4;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+        
+        a {
+            color: #07c!important;
+            text-decoration: underline
+        }
+        
+        a span {
+            color: #07c
+        }
+        
+        a img {
+            border: 0
+        }
+        
+        div,
+        p,
+        td {
+            -webkit-font-smoothing: subpixel-antialiased
+        }
+        
+        table {
+            border-collapse: collapse
+        }
+        
+        .h1 {
+            font-family: Calibri, arial;
+            font-size: 24px;
+            color: #333;
+            text-align: left;
+            line-height: 30px
+        }
+        
+        .h2 {
+            font-family: Calibri, arial;
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+            line-height: 24px
+        }
+        
+        .paragraph,
+        p {
+            font-family: Calibri, arial;
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+            line-height: 20px
+        }
+        
+        p {
+            Margin: 1em 0
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #999
+        }
+        
+        .cover {
+            padding: 0
+        }
+        
+        .cover img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            display: block;
+            border-radius: 4px 4px 0 0
+        }
+        
+        .button {
+            width: auto!important;
+            margin: auto
+        }
+        
+        .button td {
+            padding: 0
+        }
+        
+        .button-link {
+            font-family: Circe;
+            font-size: 14px;
+            color: #fff!important;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #333;
+            border: #333 10px solid;
+            padding: 0 10px;
+            border-radius: 25px;
+            display: inline-block
+        }
+        
+        .button-link span {
+            color: #fff
+        }
+        
+        .four-columns,
+        .one-column,
+        .three-columns,
+        .two-columns {
+            text-align: center;
+            font-size: 0
+        }
+        
+        .four-columns,
+        .three-columns,
+        .two-columns {
+            padding-left: 10px;
+            padding-right: 10px
+        }
+        
+        .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            text-align: left
+        }
+        
+        .one-column .column {
+            max-width: 600px
+        }
+        
+        .two-columns .column {
+            max-width: 290px
+        }
+        
+        .three-columns .column {
+            max-width: 193px
+        }
+        
+        .four-columns .column {
+            max-width: 290px
+        }
+        
+        .contacts .h1 {
+            text-align: center
+        }
+        
+        .contacts .paragraph {
+            text-align: center
+        }
+        
+        .content {
+            padding: 0
+        }
+        
+        .credits .paragraph {
+            color: #999;
+            font-size: 12px;
+            text-align: center
+        }
+        
+        .header .h1 {
+            text-align: center
+        }
+        
+        .header .paragraph {
+            text-align: center;
+            font-size: 11px;
+            color: #666
+        }
+        
+        .logo td {
+            text-align: center
+        }
+        
+        @media only screen and (max-width:400px) {
+            .two-columns .column {
+                max-width: 100%!important
+            }
+            .three-columns .column {
+                max-width: 49.9%!important
+            }
+            .four-columns .column {
+                max-width: 100%!important
+            }
+        }
+        
+        @media screen and (min-width:401px) and (max-width:635px) {
+            .two-columns .column {
+                max-width: 50%!important
+            }
+            .three-columns .column {
+                max-width: 33.33%!important
+            }
+            .four-columns .column {
+                max-width: 100%!important
+            }
+        }
+    </style>
+</head>
 
-.middle .outer {
-    background-color: #fff;
-    border-radius: 4px
-}
-
-.footer,
-.header,
-.middle {
-    margin: 0 10px;
-    text-align: center;
-    background-color: #f4f4f4;
-    table-layout: fixed;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
-}
-
-a {
-    color: #07c!important;
-    text-decoration: underline
-}
-
-a span {
-    color: #07c
-}
-
-a img {
-    border: 0
-}
-
-div,
-p,
-td {
-    -webkit-font-smoothing: subpixel-antialiased
-}
-
-table {
-    border-collapse: collapse
-}
-
-.h1 {
-    font-family: Calibri, arial;
-    font-size: 24px;
-    color: #333;
-    text-align: left;
-    line-height: 30px
-}
-
-.h2 {
-    font-family: Calibri, arial;
-    font-size: 18px;
-    color: #333;
-    text-align: left;
-    line-height: 24px
-}
-
-.paragraph,
-p {
-    font-family: Calibri, arial;
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-    line-height: 20px
-}
-
-p {
-    Margin: 1em 0
-}
-
-.quote {
-    font-style: italic;
-    color: #999
-}
-
-.cover {
-    padding: 0
-}
-
-.cover img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-    border-radius: 4px 4px 0 0
-}
-
-.button {
-    width: auto!important;
-    margin: auto
-}
-
-.button td {
-    padding: 0
-}
-
-.button-link {
-    font-family: Circe;
-    font-size: 14px;
-    color: #fff!important;
-    font-weight: 700;
-    text-decoration: none;
-    background-color: #333;
-    border: #333 10px solid;
-    padding: 0 10px;
-    border-radius: 25px;
-    display: inline-block
-}
-
-.button-link span {
-    color: #fff
-}
-
-.four-columns,
-.one-column,
-.three-columns,
-.two-columns {
-    text-align: center;
-    font-size: 0
-}
-
-.four-columns,
-.three-columns,
-.two-columns {
-    padding-left: 10px;
-    padding-right: 10px
-}
-
-.column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    text-align: left
-}
-
-.one-column .column {
-    max-width: 600px
-}
-
-.two-columns .column {
-    max-width: 290px
-}
-
-.three-columns .column {
-    max-width: 193px
-}
-
-.four-columns .column {
-    max-width: 290px
-}
-
-.contacts .h1 {
-    text-align: center
-}
-
-.contacts .paragraph {
-    text-align: center
-}
-
-.content {
-    padding: 0
-}
-
-.credits .paragraph {
-    color: #999;
-    font-size: 12px;
-    text-align: center
-}
-
-.header .h1 {
-    text-align: center
-}
-
-.header .paragraph {
-    text-align: center;
-    font-size: 11px;
-    color: #666
-}
-
-.logo td {
-    text-align: center
-}
-
-@media only screen and (max-width:400px) {
-    .two-columns .column {
-        max-width: 100%!important
-    }
-    .three-columns .column {
-        max-width: 49.9%!important
-    }
-    .four-columns .column {
-        max-width: 100%!important
-    }
-}
-
-@media screen and (min-width:401px) and (max-width:635px) {
-    .two-columns .column {
-        max-width: 50%!important
-    }
-    .three-columns .column {
-        max-width: 33.33%!important
-    }
-    .four-columns .column {
-        max-width: 100%!important
-    }
-}
-@media screen and (max-width:602px){
-   .mobile-a{
-      display: block;
-   }
-   .mobile-img{
-      max-width: 40px!important;
-      width: 40px!important;
-   }
-}
-
-@media screen and (max-width:640px){
-   .mobile-img-bg{
-      display: none!important;
-   }
-}
-
-</style>
-   </head>
-   <body style="background-color:#f7f7f7;margin:0; padding-top: 21px;">
-      <div class="header" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0px 10px;table-layout:fixed;text-align:center">
-         <!--[if (gte mso 9)|(IE)]>
+<body style="background-color:#f7f7f7;margin:0; padding-top: 21px;">
+    <div class="header" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0px 10px;table-layout:fixed;text-align:center">
+        <!--[if (gte mso 9)|(IE)]>
          <table width="600" align="center">
          <tr>
             <td>
                <![endif]-->
-               <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;background-color: #ffffff;max-width:600px;width:100%">
-                  <tbody>
-                     <tr>
-                        <td class="one-column content" align="center" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center; padding-bottom: 0px;">
-                           <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:12px;max-width:600px;text-align:center;vertical-align:top;width:100%">
-                              <table width="100%" cellpadding="20" style="border-collapse:collapse">
-                                 <tbody>
+        <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;background-color: #ffffff;max-width:600px;width:100%">
+            <tbody>
+                <tr>
+                    <td class="one-column content" align="center" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center; padding-bottom: 0px;">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:12px;max-width:600px;text-align:center;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="20" style="border-collapse:collapse">
+                                <tbody>
                                     <tr>
-                                       <td class="cover" align="right" style="-webkit-font-smoothing:subpixel-antialiased;padding:25px 4px 28px 0px;">
-                                          <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline">
-                                             <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/logo.png?raw=true" alt="photo" width="129" style="border:0;border-radius:0;display:block;height:auto;max-width:129px;width:129px;">
-                                          </a>
-                                       </td>
+                                        <td class="cover" align="right" style="-webkit-font-smoothing:subpixel-antialiased;padding:25px 4px 28px 0px;">
+                                            <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline">
+                                                <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/logo.png?raw=true" alt="photo" width="129" style="border:0;border-radius:0;display:block;height:auto;max-width:129px;width:129px;">
+                                            </a>
+                                        </td>
                                     </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!--[if (gte mso 9)|(IE)]>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
                   </td>
 </tr>
 </table>
                   <![endif]-->
-      </div>
-      <div class="middle" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
-   <!--[if (gte mso 9)|(IE)]>
+    </div>
+    <div class="middle" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
+        <!--[if (gte mso 9)|(IE)]>
    <table width="600" align="center">
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="background-color:#fff;border-collapse:collapse;margin:0 auto;max-width:600px;width:100%;">
-   <tbody>
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center; box-sizing: border-box;padding: 0px 26px;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:12px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;padding-top:0px">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#1aa5e0;font-family:Arial;font-size:50px;line-height:48px;text-align:left; margin: 0;">Полиуретановая</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;color:#1aa5e0;font-family:Arial;font-size:43px;line-height:41px;text-align:left; margin: 0; font-weight: 400;">мастика - 230 р./кг</p>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:20px;text-align:center;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: center; padding:0px; background-color: #66c529;">
-                           <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/bg.png?raw=true" alt="bg" width="15" class="mobile-img-bg" style=" height: 68px; vertical-align: middle; border:0;border-radius:0;display:inline-block;max-width:15px;width:15px;">
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase; padding-right: 12px; display: inline-block;"><span style="color: #ffffff;">Напыление</span></a>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase; padding-right: 12px; padding-left: 11px; display: inline-block;"><span style="color: #ffffff;">Заливка</span></a>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase; padding-right: 12px; padding-left: 12px; display: inline-block;"><span style="color: #ffffff;">Полиалы</span></a>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; margin: 0 auto; text-decoration: none; text-transform: uppercase; padding-right: 14px; padding-left: 12px; display: inline-block;"><span style="color: #ffffff;">Полимочевины</span></a>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; margin: 0 auto; text-decoration: none; text-transform: uppercase; padding: 0; border: 22px solid #f9d53d; background-color: #f9d53d; margin-bottom: -20px; display: inline-block; font-weight: bold;border-bottom-width: 40px;" class="mobile-a"><span style="color: #000000;">Каталог</span></a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:20px;text-align:center">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; position: relative;">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;padding-right: 115px; font-weight: 400; color:#8cc63f;font-family:Arial;font-size:33px;line-height:33px;text-align:left; margin: 0;">Апрельский выпуск Экотермикс!</p>
-                           <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/icon-1.png?raw=true" alt="icon" width="112" class="mobile-img" style=" position: absolute; top: 0px;right: 1px; border:0;border-radius:0;display:block;height:auto;max-width:112px;width:112px;">
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px; padding-bottom: 45px; position: relative;">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 174px; margin-right: 40px;">Специально для Вас мы подготовили акцию спец. ценой</p>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased; text-decoration: none; position: relative; background-color: #f9d53d; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 226px;border-top: 12px solid #f9d53d; border-bottom: 9px solid #f9d53d; border-left: 17px solid #f9d53d; border-right: 34px solid #f9d53d; box-sizing: border-box;">
-                              <span style="color: #000; font-size: 16px; line-height: 17px; font-weight: 400; font-family: Arial;">Клей для СИП-панелей</span>
-                              <span style="color: #000; font-size: 23px; line-height: 26px; font-weight: 400; font-family: Arial;">170р./кг</span>
-                              <span style="-webkit-font-smoothing:subpixel-antialiased; background-color: #00a99d; width: 226px; border-bottom: 5px solid #00a99d; position: absolute;left: -17px;bottom: -14px;"></span>
-                           </a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-      
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 40px; position: relative;">
-                           <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash-yellow.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-
-      <tr>
-         <td class="two-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; padding: 0px 20px; padding-bottom: 30px;">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-      <tr>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" align="center" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:center;vertical-align:top;width:100%; max-width: 270px;">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px;padding-top: 32px;">
-                           <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline; text-align: center; vertical-align: middle;">
-                              <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/img-1.png?raw=true" alt="img" width="163" style="border:0;border-radius:0;display:block;height:auto;max-width:100%;width:163px; margin: 0 auto;">
-                           </a>
-                        </td>
-                     </tr>
-
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px;">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; text-transform: uppercase; font-size: 23px; line-height: 26px; font-family: Arial; color: #000000; font-weight: 400; margin: 0;">ЭКОМАСТ - 2 К</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 15px; line-height: 18px; font-family: Arial; color: #000000; font-weight: 400; box-sizing: border-box; padding-right: 10px; padding-right: 55px;">Двухкомпонентная полиуретановая мастика обеспечивает отличную гидроизоляцию при ремонте и устройстве мягких кровель, гидроизоляцию фундаментов, резервуаров, очистных сооружений, труб, колодцев и т.д.</p>
-                           <a href="#" style="text-transform: uppercase; text-align: center;border: 1px solid #f9d53d; font-size: 14px;line-height: 14px; color: #9d005c; text-decoration: none; font-weight: 400; font-family: Arial; padding: 10px 21px; margin-top: 29px; display: inline-block;"><span style="color:#9d005c;">ПОДРОБНЕЕ</span></a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
-         </tr>
-      </table>
-               <![endif]-->
-         </td>
-      </tr>
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 40px; position: relative;">
-                           <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash-yellow.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-      <tr>
-         <td class="two-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; padding: 0px 20px; padding-bottom: 30px;">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-      <tr>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" align="center" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:center;vertical-align:top;width:100%; max-width: 270px;">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px;padding-top: 32px;">
-                           <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline; text-align: center; vertical-align: middle;">
-                              <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/img-2.png?raw=true" alt="img" width="163" style="border:0;border-radius:0;display:block;height:auto;max-width:100%;width:163px; margin: 0 auto;">
-                           </a>
-                        </td>
-                     </tr>
-
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px;">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 23px; line-height: 25px; font-family: Arial; color: #000000; font-weight: 400; margin: 0; padding-right: 55px;">Полиуретановый 
-                              клей для сип-панелей 
-                              в новой фасовке 10кг.</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 15px; line-height: 18px; font-family: Arial; color: #000000; font-weight: 400; box-sizing: border-box; padding-right: 10px; padding-right: 55px;">Двухкомпонентная полиуретановая мастика обеспечивает отличную гидроизоляцию при ремонте и устройстве мягких кровель, гидроизоляцию фундаментов, резервуаров, очистных сооружений, труб, колодцев и т.д.</p>
-                           <a href="#" style="text-transform: uppercase; text-align: center;border: 1px solid #f9d53d; font-size: 14px;line-height: 14px; color: #9d005c; text-decoration: none; font-weight: 400; font-family: Arial; padding: 10px 21px; margin-top: 29px; display: inline-block;"><span style="color:#9d005c;">ПОДРОБНЕЕ</span></a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
-         </tr>
-      </table>
-               <![endif]-->
-         </td>
-      </tr>
-
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; position: relative;">
-                           <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left; background-color: #c7b299; padding-top: 27px;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 27px; position: relative;">
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0; padding: 0 68px;padding-bottom: 7px;">Если у вас есть вопросы или пожелания, напишите нам, мы с удовольствием ответим на них</p>
-                           <a href="mailto:opt@ecotermix.ru" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0 auto; text-decoration: none;"><span style="color: #000000;">opt@ecotermix.ru</span></a>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0; padding: 22px 68px;">Всего Вам доброго и теплого!</p>
-                           <a href="#" style="-webkit-font-smoothing:subpixel-antialiased; text-decoration: none; position: relative; background-color: #f9d53d; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 226px;border-top: 12px solid #f9d53d; border-bottom: 9px solid #f9d53d; border-left: 24px solid #f9d53d; border-right: 24px solid #f9d53d; box-sizing: border-box;">
-                              <span style="color: #000; font-size: 16px; line-height: 17px; font-weight: 400; font-family: Arial;">Перейти на сайт</span>
-                              <span style="-webkit-font-smoothing:subpixel-antialiased; background-color: #00a99d; width: 171px; border-bottom: 5px solid #00a99d; position: absolute;left: -24px;bottom: -14px;"></span>
-                           </a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-               </tbody>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-                  </td>
-</tr>
-</table>
-               <![endif]-->
-</div>
-
-<div class="footer" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
-   <!--[if (gte mso 9)|(IE)]>
-   <table width="600" align="center">
-   <tr>
-      <td>
-         <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
+        <table class="outer" cellpadding="0" align="center" style="background-color:#fff;border-collapse:collapse;margin:0 auto;max-width:600px;width:100%;">
             <tbody>
-               <tr>
-                  <td class="one-column contacts" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                           <tbody>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased; padding-bottom: 90px;">
-                                    <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#000000;padding-top: 0px; font-family:Arial;font-size:11px;line-height:19px;text-align:center">
-                                       <p style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#000000; font-family:Arial;font-size:11px;line-height:19px;text-align:center;">г. Санкт-Петербург, наб. реки Смоленки д.14, корпус А, БЦ "Маркус", оф. 69, ст. м. "Василеостровская"</p>
-                                    </div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center; box-sizing: border-box;padding: 0px 26px;">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:12px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;padding-top:0px">
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#1aa5e0;font-family:Arial;font-size:50px;line-height:48px;text-align:left; margin: 0;">Полиуретановая</p>
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased;color:#1aa5e0;font-family:Arial;font-size:43px;line-height:41px;text-align:left; margin: 0; font-weight: 400;">мастика - 230 р./кг</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:20px;text-align:center;">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td class="mobile-td-2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; padding:0px; background-color: #66c529;border-bottom:33px solid #fff;">
+                                            <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/bg.png?raw=true" alt="bg" width="15" class="mobile-img-bg" style=" height: 68px; vertical-align: middle; border:0;border-radius:0;display:inline-block;max-width:15px;width:15px;">
+
+                                        </td>
+                                        <td class="mobile-td-2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; padding:0px; background-color: #66c529;border-bottom:33px solid #fff;">
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase;padding-left:5px;  padding-right:5px; display: inline-block; vertical-align: middle;"><span style="color: #ffffff;">Напыление</span></a>
+                                        </td>
+                                        <td class="mobile-td-2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; padding:0px; background-color: #66c529;border-bottom:33px solid #fff;">
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase; padding-right: 5px; padding-left: 5px; display: inline-block; vertical-align: middle;"><span style="color: #ffffff;">Заливка</span></a>
+                                        </td>
+                                        <td class="mobile-td-2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; padding:0px; background-color: #66c529;border-bottom:33px solid #fff;">
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400;margin-right: -6px; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; text-decoration: none; text-transform: uppercase; padding-right: 5px; padding-left: 5px; display: inline-block; vertical-align: middle;"><span style="color: #ffffff;">Полиалы</span></a>
+                                        </td>
+                                        <td class="mobile-td-2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; padding:0px; background-color: #66c529;border-bottom:33px solid #fff;">
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; margin: 0 auto; text-decoration: none; text-transform: uppercase; padding-right: 5px; padding-left: 5px; display: inline-block;"><span style="color: #ffffff;">Полимочевины</span></a>
+                                        </td>
+                                        <td callspan="2" align="center" style="-webkit-font-smoothing:subpixel-antialiased; text-align: left; vertical-align: top; padding:0px; " class="mobile-td">
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; vertical-align: top; color:#171062;font-family:Arial;font-size:14px;line-height:22px;text-align:center; margin: 0 auto; text-decoration: none; text-transform: uppercase; padding: 0; border-top: 22px solid #f9d53d; border-bottom: 22px solid #f9d53d;border-left: 19px solid #f9d53d;border-right: 19px solid #f9d53d; background-color: #f9d53d; display: inline-block; font-weight: bold;border-bottom-width: 40px;"
+                                                class="mobile-a"><span style="color: #000000;">Каталог</span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:20px;text-align:center">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px; position: relative; vertical-align: top;">
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#8cc63f;font-family:Arial;font-size:33px;line-height:33px;text-align:left; margin: 0; display: inline-block; width: 79%; padding-bottom: 13px; vertical-align: top;">Апрельский выпуск Экотермикс!</p>
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 174px; margin-right: 40px; vertical-align: top;padding: 10px 0;">Специально для Вас мы подготовили акцию спец. ценой</p>
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased; text-decoration: none; position: relative; background-color: #f9d53d; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 226px;border-top: 12px solid #f9d53d; border-bottom: 9px solid #f9d53d; border-left: 17px solid #f9d53d; border-right: 34px solid #f9d53d; box-sizing: border-box;">
+                                                <span style="color: #000; font-size: 16px; line-height: 17px; font-weight: 400; font-family: Arial;">Клей для СИП-панелей</span>
+                                                <span style="color: #000; font-size: 23px; line-height: 26px; font-weight: 400; font-family: Arial;">170р./кг</span>
+                                                <span style="-webkit-font-smoothing:subpixel-antialiased; background-color: #00a99d; width: 226px; border-bottom: 5px solid #00a99d; position: absolute;left: -17px;bottom: -14px;"></span>
+                                            </a>
+                                        </td>
+                                        <td style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px; position: relative;">
+                                            <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/icon-1.png?raw=true" alt="icon" width="112" class="mobile-img" style="border:0;border-radius:0;display:inline-block;height:auto;max-width:112px;width:112px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 40px; position: relative;">
+                                            <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash-yellow.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="two-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; padding: 0px 20px; padding-bottom: 30px;">
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+      <tr>
+         <td width="50%" valign="top">
+            <![endif]-->
+                        <div class="column" align="center" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:center;vertical-align:top;width:100%; max-width: 270px;">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px;padding-top: 32px;">
+                                            <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline; text-align: center; vertical-align: middle;">
+                                                <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/img-1.png?raw=true" alt="img" width="163" style="border:0;border-radius:0;display:block;height:auto;max-width:100%;width:163px; margin: 0 auto;">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+         <td width="50%" valign="top">
+            <![endif]-->
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px;">
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; text-transform: uppercase; font-size: 23px; line-height: 26px; font-family: Arial; color: #000000; font-weight: 400; margin: 0;">ЭКОМАСТ - 2 К</p>
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 15px; line-height: 18px; font-family: Arial; color: #000000; font-weight: 400; box-sizing: border-box; padding-right: 10px; padding-right: 55px;">Двухкомпонентная полиуретановая мастика обеспечивает отличную гидроизоляцию при ремонте и устройстве мягких кровель, гидроизоляцию фундаментов, резервуаров, очистных сооружений, труб, колодцев и т.д.</p>
+                                            <a href="#" style="text-transform: uppercase; text-align: center;border: 1px solid #f9d53d; font-size: 14px;line-height: 14px; color: #9d005c; text-decoration: none; font-weight: 400; font-family: Arial; padding: 10px 21px; margin-top: 29px; display: inline-block;"><span style="color:#9d005c;">ПОДРОБНЕЕ</span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+         </tr>
+      </table>
+               <![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 40px; position: relative;">
+                                            <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash-yellow.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="two-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; padding: 0px 20px; padding-bottom: 30px;">
+                        <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+      <tr>
+         <td width="50%" valign="top">
+            <![endif]-->
+                        <div class="column" align="center" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:center;vertical-align:top;width:100%; max-width: 270px;">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px;padding-top: 32px;">
+                                            <a href="#" target="_blank" style="color:#fff!important;text-decoration:underline; text-align: center; vertical-align: middle;">
+                                                <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/img-2.png?raw=true" alt="img" width="163" style="border:0;border-radius:0;display:block;height:auto;max-width:100%;width:163px; margin: 0 auto;">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+         <td width="50%" valign="top">
+            <![endif]-->
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" style="-webkit-font-smoothing:subpixel-antialiased;text-align:left;padding:0px;">
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 23px; line-height: 25px; font-family: Arial; color: #000000; font-weight: 400; margin: 0; padding-right: 55px;">Полиуретановый клей для сип-панелей в новой фасовке 10кг.</p>
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-size: 15px; line-height: 18px; font-family: Arial; color: #000000; font-weight: 400; box-sizing: border-box; padding-right: 10px; padding-right: 55px;">Двухкомпонентная полиуретановая мастика обеспечивает отличную гидроизоляцию при ремонте и устройстве мягких кровель, гидроизоляцию фундаментов, резервуаров, очистных сооружений, труб, колодцев и т.д.</p>
+                                            <a href="#" style="text-transform: uppercase; text-align: center;border: 1px solid #f9d53d; font-size: 14px;line-height: 14px; color: #9d005c; text-decoration: none; font-weight: 400; font-family: Arial; padding: 10px 21px; margin-top: 29px; display: inline-block;"><span style="color:#9d005c;">ПОДРОБНЕЕ</span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+         </tr>
+      </table>
+               <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; position: relative;">
+                                            <img src="https://github.com/Hudson8811/-mastic-letter/blob/master/index_files/dash.png?raw=true" alt="dash" width="460" style=" border:0;border-radius:0;display:block;height:auto;max-width:460px;width:100%;margin: 0 auto;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0px 20px;text-align:left; background-color: #c7b299; padding-top: 27px;">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:17px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="-webkit-font-smoothing:subpixel-antialiased;text-align:center;padding:0px; padding-bottom: 27px; position: relative;">
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0; padding: 0 68px;padding-bottom: 7px;">Если у вас есть вопросы или пожелания, напишите нам, мы с удовольствием ответим на них</p>
+                                            <a href="mailto:opt@ecotermix.ru" style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0 auto; text-decoration: none;"><span style="color: #000000;">opt@ecotermix.ru</span></a>
+                                            <p style="-webkit-font-smoothing:subpixel-antialiased; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:19px;text-align:center; margin: 0; padding: 22px 68px;">Всего Вам доброго и теплого!</p>
+                                            <a href="#" style="-webkit-font-smoothing:subpixel-antialiased; text-decoration: none; position: relative; background-color: #f9d53d; font-weight: 400; color:#000000;font-family:Arial;font-size:15px;line-height:17px;text-align:left; margin: 0; display: inline-block; max-width: 226px;border-top: 12px solid #f9d53d; border-bottom: 9px solid #f9d53d; border-left: 24px solid #f9d53d; border-right: 24px solid #f9d53d; box-sizing: border-box;">
+                                                <span style="color: #000; font-size: 16px; line-height: 17px; font-weight: 400; font-family: Arial;">Перейти на сайт</span>
+                                                <span style="-webkit-font-smoothing:subpixel-antialiased; background-color: #00a99d; width: 171px; border-bottom: 5px solid #00a99d; position: absolute;left: -24px;bottom: -14px;"></span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
-         </table>
-         <!--[if (gte mso 9)|(IE)]>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+                  </td>
+</tr>
+</table>
+               <![endif]-->
+    </div>
+
+    <div class="footer" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f7f7f7;margin:0 10px;table-layout:fixed;text-align:center">
+        <!--[if (gte mso 9)|(IE)]>
+   <table width="600" align="center">
+   <tr>
+      <td>
+         <![endif]-->
+        <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
+            <tbody>
+                <tr>
+                    <td class="one-column contacts" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
+                        <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                            <table width="100%" cellpadding="0" style="border-collapse:collapse">
+                                <tbody>
+                                    <tr>
+                                        <td style="-webkit-font-smoothing:subpixel-antialiased; padding-bottom: 90px;">
+                                            <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#000000;padding-top: 0px; font-family:Arial;font-size:11px;line-height:19px;text-align:center">
+                                                <p style="-webkit-font-smoothing:subpixel-antialiased;font-weight: 400; color:#000000; font-family:Arial;font-size:11px;line-height:19px;text-align:center;">г. Санкт-Петербург, наб. реки Смоленки д.14, корпус А, БЦ "Маркус", оф. 69, ст. м. "Василеостровская"</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
 
             </td>
 </tr>
 </table>
             <![endif]-->
 
-         
-</div>
+
+    </div>
 </body>
 
 </html>
